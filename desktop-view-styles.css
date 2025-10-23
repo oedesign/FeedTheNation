@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --header-background-color: green;
+    --nav-background: green;
+    --button: green;
+    --header-color: white;
+    --text-color: green;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+}
+
+p {
+    color: green;
+}
+
+/* home */
+
+.survey {
+   /* border: 1px solid; */
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-top: 20px;
+   display: grid;
+   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.suv {
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px double white;
+}
+
+.suv p {
+    color: white;
+}
+
+header {
+    background-color: var(--header-background-color);
+    /* border: 3px solid; */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    color: var(--header-color);
+    font-size: 38px;
+}
+
+h2 {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+nav {
+   position: relative;
+   top: 70px;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+}
+
+nav ul {
+    background-color: var(--nav-background);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* main */
+
+main {
+    position: relative;
+    top: 120px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+/* form {
+    border: 1px solid black;
+    max-width: 867px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+input {
+    padding: 5px;
+} */
+
+/* Community */
+
+.barbing {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barbing fieldset {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid green;
+    /* margin-bottom: 50px;
+    margin-top: 20px; */
+    margin: 20px 10px 50px 10px;
+}
+
+legend {
+    color: green;
+}
+
+.art-b {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.join {
+    padding: 10px;
+    /* margin: 0 auto; */
+    max-width: 100px;
+    border: 5px double white;
+    background-color: green;
+    cursor: pointer;
+    color: white;
+}
+
+.img-barb {
+    width: 40%;
+    border: 5px double green;
+}
+
+/* about */
+
+.purpose {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.purpose ol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.purpose li p {
+    word-spacing: 4px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: green;
+    position: relative;
+    top: 120px;
+    margin-top: 200px;
+}

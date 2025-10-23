@@ -1,0 +1,29 @@
+@media screen and (max-width: 868px) {
+  /* body {
+    background-color: bisque;
+  } */
+   .survey {
+   grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+   justify-content: center;
+}
+nav ul li a {
+    font-size: 16px;
+    
+}
+  .barbing fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-barb {
+    width: 80%;
+}
+.art-b {
+    justify-content: center;
+    align-items: center;
+}
+/* .join {
+   margin: 0 auto;
+   padding: 15px 25px 15px 25px;
+} */
+}
