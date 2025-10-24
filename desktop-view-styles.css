@@ -241,9 +241,9 @@ legend {
 footer {
     background-color: green;
     position: relative;
-    top: 120px;
+    top: 0px;
     margin-top: 200px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .FTNlogo {
